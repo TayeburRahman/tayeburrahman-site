@@ -1,0 +1,16 @@
+.serviceIcon {
+  font-size: 50px !important;
+  color: #5d5df0eb;
+}
+.cardDiv {
+  border-radius: 5px;
+  height: 200px;
+  color: #425066;
+}
+.cardDiv:hover {
+  background: linear-gradient(106.54deg, #1d0983 -4.67%, #6c31bc 112.32%);
+  color: rgb(227, 227, 227) !important;
+}
+.cardDiv:hover .serviceIcon {
+  color: rgb(218, 218, 218);
+}

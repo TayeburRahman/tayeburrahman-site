@@ -1,0 +1,15 @@
+.footerBottom {
+  background: black;
+  color: white;
+  display: grid;
+  align-items: center !important;
+}
+.footerIconLink {
+  text-decoration: none !important;
+  color: wheat !important;
+  cursor: pointer;
+  margin: 10px !important;
+}
+.footerIconLink:hover {
+  color: #ff9100 !important;
+}

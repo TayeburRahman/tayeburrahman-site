@@ -1,0 +1,126 @@
+.dashboardHeader {
+  height: 72px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  width: 100% !important;
+  max-width: 10000px;
+  background: black;
+}
+
+.dashboardHeader-div {
+  align-items: stretch;
+  display: flex !important;
+  flex-direction: row;
+  height: 72px;
+  justify-content: space-between;
+  padding: 0 24px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  width: 100% !important;
+}
+
+.page__header__drawer {
+  color: #fff;
+  display: none;
+  margin-left: -1px;
+  width: 1px;
+}
+.page__header__auth {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  min-width: 130px;
+}
+.ButtonHeder-m {
+  color: white !important;
+  border-radius: 0px !important;
+  background: none !important;
+  border: none;
+  height: 100%;
+  font-weight: 500;
+  /* border-bottom: 4px solid rgb(85, 10, 190) !important; */
+  list-style: none;
+  display: inline-block;
+  position: relative;
+}
+.ButtonHeder-m :hover {
+  color: rgb(79, 94, 255) !important;
+}
+
+.ButtonHeder-m:hover:after {
+  width: 100%;
+}
+.ButtonHeder-m:after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  background-color: #e94914;
+  width: 0;
+  height: 4px;
+  transition: all 300ms ease-out;
+}
+
+.ButtonHeder-submit {
+  color: #e94914 !important;
+  padding: 8px 20px !important;
+  font-size: 12px !;
+  background: white !;
+  font-weight: 400;
+  border-radius: 24px !important;
+  border: 2px solid #e94914 !important;
+}
+.ButtonHeder-submit:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 105, 0, 1) 0%,
+    rgb(207, 46, 46) 100%
+  ) !important;
+  color: white !important;
+}
+.ButtonHeder-login {
+  color: #e94914 !important;
+  padding: 10px 20px !important;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 24px !important;
+}
+.OpenDrawer {
+  display: none;
+}
+.linkButton {
+  display: flex;
+  text-decoration: none !important;
+  color: rgb(0 0 0 / 87%);
+}
+
+@media only screen and (max-width: 912px) {
+  .OpenDrawer {
+    display: block;
+  }
+  .drawerIcon {
+    color: #afafaf !important;
+  }
+  .logo {
+    width: 120% !important;
+    margin-left: -10px;
+  }
+  .header__link {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .logo {
+    width: 225% !important;
+    margin-left: -10px;
+  }
+  .header-left {
+    margin-left: -35px;
+  }
+}

@@ -1,0 +1,43 @@
+.BlogIcon {
+  font-size: 20px !important;
+  margin-right: 10px;
+}
+.white95 {
+  width: 90% !important;
+}
+.Readtheblog {
+  align-self: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 0;
+  font-family: "Google Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  height: auto;
+  line-height: 20px;
+  background-color: transparent;
+  color: #425066 !important;
+  display: flex;
+  margin-top: 8px !important;
+  padding: 0;
+  position: relative;
+  text-decoration: none !important;
+}
+.ArrowForwardIcon {
+  font-size: 18px;
+}
+.boxShawdo:hover .Readtheblog {
+  color: rgb(222, 222, 222) !important ;
+}
+.boxShawdo:hover .colorComo {
+  color: rgb(222, 222, 222) !important ;
+}
+.boxShawdo:hover .ArrowForwardIcon {
+  margin-left: 5px;
+  animation: 5s;
+}
+.colorComo {
+  color: #425066 !important;
+  text-decoration: none !important;
+}

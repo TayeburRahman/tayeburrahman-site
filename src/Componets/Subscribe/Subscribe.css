@@ -1,0 +1,104 @@
+.SubscribeMail {
+  background-image: linear-gradient(-90deg, #ff9100 18%, #ff6f00 86%);
+  height: 300px;
+  width: 100%;
+  position: relative;
+}
+
+.tensorsite-lines {
+  position: absolute;
+  background: url(https://www.tensorflow.org/site-assets/images/marketing/footer-lines.svg)
+    center bottom/100% auto no-repeat;
+  left: 50%;
+  pointer-events: none;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  width: 90vw;
+  height: 100%;
+  bottom: 0;
+  z-index: 2;
+}
+.alartMsg {
+  display: flex;
+  justify-content: center;
+  background: no-repeat !important;
+}
+.Subscribeform {
+  margin-top: 30px;
+  justify-content: center !important ;
+  position: relative;
+}
+.SubscribeText {
+  padding-top: 60px;
+  font-family: "Google Sans", sans-serif !important;
+  font-size: 30px !important;
+  font-weight: 700 !important;
+  line-height: 40px !important;
+  color: #fff;
+  text-align: center;
+  width: auto;
+}
+
+.basic-slide {
+  display: inline-block;
+  width: 25%;
+  padding: 10px 0 10px 0;
+  font-family: "Open Sans", sans;
+  font-weight: 400;
+  color: #377d6a;
+  background: #efefef;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  text-indent: 50px;
+  transition: all 0.3s ease-in-out;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.basic-slide:focus,
+.basic-slide:active {
+  color: #5d5df0eb;
+  text-indent: 10px;
+  background: #fff;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.label {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border: 0px;
+  background: #5d5df0eb;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  transition: all 0.3s ease-in-out;
+  width: 8%;
+}
+.label:hover {
+  background: #4d4ddaeb;
+}
+@media only screen and (max-width: 1024px) {
+  .basic-slide {
+    width: 50%;
+  }
+  .label {
+    width: 20%;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .basic-slide {
+    text-indent: 10px;
+    width: 65%;
+  }
+  .label {
+    width: 20%;
+    font-size: 14px;
+  }
+}

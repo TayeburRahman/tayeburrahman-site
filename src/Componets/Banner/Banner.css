@@ -1,0 +1,83 @@
+.text-left {
+  text-align: left;
+}
+.banner {
+  width: 100%;
+}
+.icon-bnr {
+  font-size: 25px;
+}
+.bgBanner {
+  background: url(https://www.tensorflow.org/site-assets/images/marketing/hero-river-bg-left.svg)
+    center/cover no-repeat;
+  content: "";
+  top: 0 !important;
+  background-size: 20%;
+  background-position: left 0;
+}
+/* CSS */
+.button-62 {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 105, 0, 1) 0%,
+    rgb(207, 46, 46) 100%
+  );
+  border: 0;
+  border-radius: 12px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+    0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+    0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+@media screen and (max-width: 480px) {
+  .banner img {
+    width: 85%;
+  }
+  .banner-text h2 {
+    font-size: 30px;
+  }
+  .banner-text h6 {
+    font-size: 20px;
+  }
+  .banner-text i {
+    font-size: 15px;
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .banner img {
+    width: 95%;
+  }
+  .banner-text h2 {
+    font-size: 50px;
+  }
+  .banner-text h6 {
+    font-size: 30px;
+  }
+}
