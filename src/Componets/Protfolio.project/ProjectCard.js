@@ -2,13 +2,11 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { CardActionArea, CardContent, CardMedia, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 
-const ProjectCard = ({project, technology}) => {
-    console.log('tetx',technology)
+const ProjectCard = ({project, technology}) => { 
     return (
-         <Box>
+         <Box className="card-box">
              <CardActionArea className='textLeft'>
                  <CardMedia
                  className='image1p'
@@ -22,22 +20,26 @@ const ProjectCard = ({project, technology}) => {
                    <Typography className='namePotfolio' gutterBottom variant="h6" component="div">
                      {project.name}
                    </Typography>
-                   <Typography variant="body2"  >
-                   This is a completely MERN stack project. It is also a Niche related website. Here, customer/user dashboard and admin dashboard are included.
-                   </Typography> 
+                   <Typography variant="body2">
+                     {project.homeText}
+                    </Typography> 
                  </CardContent>
                  <div className="tags ps-3 pe-2">
                    {technology?.map((tag, index) => (
                      <span key={index}>{tag}</span>
                    ))}
                  </div>
-                 </CardActionArea> 
+             </CardActionArea> 
                  <Box className="col-12 d-flex p-3 linkBox" style={{justifyContent: 'space-between'}}>
-                    <Link className="linkPotfolio" href={project.liveSite}>Explore Demo</Link>
-                    <Link className="linkPotfolio  githubLink" href={project.gitCode} >View Code <GitHubIcon/></Link>
+                    <a className="linkPotfolio" href={project.liveSite}  >Explore Demo</a>
+                    <a className="linkPotfolio  githubLink" href={project.gitCode} >View Code <GitHubIcon/></a>
                  </Box> 
          </Box>
     );
 };
 
 export default ProjectCard;
+
+
+// "liveSite": "https://objective-hugle-78dbd5.netlify.app/",
+//     "gitCode": "https://github.com/TayeburRahman/HealthCare-Service-App",

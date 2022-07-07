@@ -14,13 +14,14 @@ import "./About.css";
 
 const About = () => {
   return (
-    <div className="  about-main  text-left pb-5">
+    <div className="about-main text-left pb-5" id="about">
       <div className="container">
         <div className="d-grid about-main mt-2 pb-5  p-2 ">
-          <div className="about-imgI d-flex mb-2">
+          <div className="about-imgI d-flex mb-2" data-aos="fade-zoom-in">
             <img src={imgI} width="100%" alt="" />
           </div>
           <Typography
+          data-aos="fade-zoom-in"
             className="about-text aboutHedText mb-4"
             sx={{fontFamily: "font-family: Poppins, sans-serif !important" }}
             component="h3"
@@ -30,10 +31,10 @@ const About = () => {
           </Typography> 
         </div>
         <div className='row'>
-           <div className='col-md-6 col-lg-6 col-sm-12'>
+           <div className='col-md-6 col-lg-6 col-sm-12' data-aos="fade-right">
               <img className="img-3" width='80%' src='https://i.ibb.co/w6p3mY6/about-aee0f771fbfc1e7b8fa8.png' alt="" />
            </div> 
-           <div className='col-md-6 col-lg-6 col-sm-12'>
+           <div className='col-md-6 col-lg-6 col-sm-12' data-aos="fade-zoom-in">
            <Typography
               className=" mb-2"
               sx={{fontSize:'16px' ,fontFamily: "font-family: Poppins, sans-serif !important", color:"#dddddd"  }}
@@ -85,7 +86,7 @@ const About = () => {
         </div>
         <div className="row about-main  p-2">
           <div className="col-md-6 col-ms-12 "> 
-           <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>  
+           <Row style={{ justifyContent: "center", paddingBottom: "50px" }} data-aos="zoom-in">  
             <Col xs={4} md={2} className="tech-icons">
             <img className="img-4 mt-2 pe-3"  width='130%' src='https://i.ibb.co/6ZgfQN7/images-5-removebg-preview-removebg-preview.png' alt="" /> 
             </Col> 
@@ -136,7 +137,7 @@ const About = () => {
             </Col>
           </Row>
           </div>
-          <div className="col-md-6 col-sm-12 ">
+          <div className="col-md-6 col-sm-12" data-aos="fade-zoom-in">
           <Typography
               className="mt-4"
               sx={{fontSize:'16px' ,fontFamily: "font-family: Poppins, sans-serif !important", color:"#dddddd"  }}

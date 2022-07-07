@@ -4,15 +4,14 @@
 }
 .contact {
   background-image: url("../../images/contact_bg.png");
-  background-color: #5d5df0eb;
-  height: 600px;
+  background-color: #000000;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
 }
 .input-div {
-  background-color: #161616;
+  background-color: #000000b5;
   border-radius: 5px;
   height: 50px;
   padding: 18px;
@@ -23,7 +22,7 @@
   letter-spacing: 0.5px;
 }
 .input-div-m {
-  background-color: #161616;
+  background-color: #000000b5;
   border-radius: 5px;
   line-height: 40px;
   box-shadow: 0px 18px 18px 0 rgb(0 0 0 / 20%);
@@ -36,7 +35,7 @@
 .button-48 {
   border-radius: 5px;
   appearance: none;
-  background-color: #161616;
+  background-color: #000000b5;
   border-width: 0;
   box-sizing: border-box;
   color: #fff;
@@ -74,7 +73,7 @@
   background: linear-gradient(
     135deg,
     rgba(255, 105, 0, 1) 0%,
-    rgb(207, 46, 46) 100%
+    rgb(207, 92, 46) 100%
   );
   clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
   content: "";
@@ -106,6 +105,8 @@
 }
 .w-70 {
   width: 70%;
+}
+.marginBottom {
 }
 @media only screen and (max-width: 768px) {
   .w-70 {

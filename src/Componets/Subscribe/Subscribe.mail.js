@@ -22,10 +22,10 @@ function SubscribeMail() {
     return (
         <div className='SubscribeMail'>
             <div className='tensorsites-container'>
-                 <Typography className='SubscribeText' >
+                 <Typography className='SubscribeText' data-aos="fade-zoom-in">
                  Subscribe And Get My Latest Blog Post <br></br> In Your Inbox !
                  </Typography>
-               <div className='SubscribeLastDiv'>
+               <div className='SubscribeLastDiv' data-aos="fade-zoom-in">
                 <form className='d-flex Subscribeform' ref={form} onSubmit={handleSubmit(onSubmit, onError)}>
                 <input className='basic-slide' type="email" placeholder='Enter email' {...register("email")} />
                 <input className='label' type="submit"  value="Subscribe" /> 

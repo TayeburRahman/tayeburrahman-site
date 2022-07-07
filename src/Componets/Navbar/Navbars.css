@@ -69,11 +69,9 @@
 
 .ButtonHeder-submit {
   color: #e94914 !important;
-  padding: 8px 20px !important;
-  font-size: 12px !;
-  background: white !;
+  padding: 5px 15px !important;
   font-weight: 400;
-  border-radius: 24px !important;
+  border-radius: 10px !important;
   border: 2px solid #e94914 !important;
 }
 .ButtonHeder-submit:hover {
@@ -105,19 +103,44 @@
     display: block;
   }
   .drawerIcon {
-    color: #afafaf !important;
+    color: #d2d8ff !important;
+  }
+  svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+    font-size: 35px !important;
   }
   .logo {
-    width: 120% !important;
+    width: 130% !important;
     margin-left: -10px;
   }
   .header__link {
     display: none !important;
   }
 }
+.backgroundDower {
+  position: relative;
+  padding-top: 50px;
+  height: 100%;
+  border-right: 2px solid #e94914;
+  background: linear-gradient(
+    106.54deg,
+    #000000 -4.67%,
+    #0c001d 112.32%
+  ) !important;
+}
+.colorWhite {
+  color: white;
+  font-weight: 600;
+}
+.ColorMain {
+  color: #e94914;
+}
+.bottomNav {
+  position: absolute;
+  bottom: 0 !important;
+}
 @media only screen and (max-width: 560px) {
   .logo {
-    width: 225% !important;
+    width: 280% !important;
     margin-left: -10px;
   }
   .header-left {

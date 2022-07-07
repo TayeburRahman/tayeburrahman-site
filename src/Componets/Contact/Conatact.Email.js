@@ -1,4 +1,5 @@
 import emailjs from '@emailjs/browser';
+import { Box, Typography } from '@mui/material';
 import MuiAlert from '@mui/material/Alert';
 import Snackbar from '@mui/material/Snackbar';
 import Stack from '@mui/material/Stack';
@@ -45,13 +46,27 @@ const ContactEmail = () => {
 
  
   return (
-    <div className="" id="email">
-      <div className="contact pb-5 pt-3 d-grid d-grid-c">
-          <img src={imgc} width="3%" alt="" />
-          <h3>Get In Touch</h3>
-        <Stack spacing={2} sx={{ width: '100%',alignItems: 'center' }}>
+    <div className="" id="contact">
+      <div className="contact marginBottom pb-5 pt-3 d-grid d-grid-c">
+      <div className="dGrid" data-aos="fade-zoom-in">
+         <div className="portfolio-imgI d-flex mt-2 mb-2" style={{border: '2px solid #3e08a8'}}>
+             <img src={imgc} width="100%" alt="" />
+         </div> 
+         <Box className='ps-5 pe-5'> 
+           <h3>Get In Touch</h3>
+           <Typography variant="subtitle1" gutterBottom component="div">
+             
+            You can fill in the contact form below or send me an email to  <span style={{color:'#e06e0a', fontWeight:'500'}}>tayebrayhan101@gmail.com</span>
+           </Typography>
+           <Typography variant="subtitle1" gutterBottom component="div">
+               Want to get connected? Follow me on the social channels below.Interested in hiring me for your project or just want to say hi? <br/>
+           </Typography>
+         </Box>
+       </div> 
+        <Stack className='' data-aos="zoom-in" spacing={2} sx={{ width: '100%',alignItems: 'center' }}>
            <div className="col-md-8 col-lg-8 col-sm-12 p-4 text-left">
-             <form ref={form} onSubmit={handleSubmit(onSubmit)}>
+             <form ref={form} 
+              onSubmit={handleSubmit(onSubmit)}>
              <input
                  type="text"
                  name="name"
@@ -85,8 +100,8 @@ const ContactEmail = () => {
                    {...register("message", { required: true, maxLength: 80 })}
                  ></textarea>
      
-                 <button class="button-48 mt-2" type="submit"><span class="text">Send Message  </span></button>
-                 <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+                 <button className="button-48 mt-2" type="submit"><span class="text">Send Message  </span></button>
+                 <Snackbar className='' open={open} autoHideDuration={6000} onClose={handleClose}>
                    <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
                      This is a success message!
                    </Alert>

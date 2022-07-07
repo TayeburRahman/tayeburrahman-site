@@ -8,7 +8,7 @@ import "./Banner.css";
 const Banner = () => {
   return (
     <div
-      className="banner bgBanner d-grid mb-5 pt-3" id="banner"
+      className="banner bgBanner d-grid mb-5 pt-3" data-aos="fade-zoom-in" id="banner"
       style={{ backgroundColor: "white", justifyContent: "center" }}
     >
       <div className="container row d-flex pt-2 mt-5 " style={{ alignItems: "center" }}>
@@ -21,8 +21,7 @@ const Banner = () => {
           >
             Hi,I am
           </Typography>
-          <Typography
-          className=" "
+          <Typography 
             variant="h3"
             className="mt-3 mb-3"
             sx={{ fontFamily: "Monospace" }}
@@ -57,7 +56,7 @@ const Banner = () => {
         <Link as={HashLink}  to="/contact#email"> <button   className="button-62 mt-2" role="button"><TelegramIcon/> Hire me</button> </Link>
          </div>
         <div className="col-md-5 col-sm-12 mt-5">
-          <img src={imgBnr} width="100%" alt="" />
+          <img data-aos="fade-left" src={imgBnr} width="100%" alt="" />
         </div>
       </div>
     </div>

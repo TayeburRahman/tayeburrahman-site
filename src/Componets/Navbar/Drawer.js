@@ -1,5 +1,10 @@
+import FacebookIcon from '@mui/icons-material/Facebook';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import ImportContactsIcon from '@mui/icons-material/ImportContacts';
+import LayersIcon from '@mui/icons-material/Layers';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ListIcon from '@mui/icons-material/List';
+import PersonIcon from '@mui/icons-material/Person';
 import TurnedInNotIcon from '@mui/icons-material/TurnedInNot';
 import WaterDamageIcon from '@mui/icons-material/WaterDamage';
 import Box from '@mui/material/Box';
@@ -30,35 +35,49 @@ export default function OpenDrawer() {
     <Box
       sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
       role="presentation"
+      className='backgroundDower'
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List>
- 
+      <List> 
           <ListItem button as={HashLink} to="/home#banner" key='Home'>
-            <ListItemIcon>
-            <WaterDamageIcon/>
+            <ListItemIcon className='colorWhite'>
+            <WaterDamageIcon  className='ColorMain'/>
             </ListItemIcon>
-            <ListItemText primary="Home" />
+            <ListItemText className='colorWhite' primary="Home" />
           </ListItem>
-
-           <ListItem button as={HashLink} to="/home#project"key='Portfolio'>
-           <ListItemIcon>
-           <ImportContactsIcon/>
+          <ListItem button as={HashLink} to="/home#about" key='Home'>
+            <ListItemIcon className='colorWhite'>
+            <PersonIcon className='ColorMain'/>
+            </ListItemIcon>
+            <ListItemText className='colorWhite' primary="About" />
+          </ListItem> 
+           <ListItem className='colorWhite' button as={HashLink} to="/home#project"key='Portfolio'>
+           <ListItemIcon className='colorWhite'>
+           <ImportContactsIcon  className='ColorMain' />
            </ListItemIcon>
-           <ListItemText primary='Portfolio' />
-
+           <ListItemText className='colorWhite' primary='Portfolio' />
          </ListItem>
-          <ListItem button as={HashLink} to="/contact" key='Contact' className='d-flex'>
-          <Link  as={HashLink} to="/contact" className='linkButton'>
+         <ListItem button as={HashLink} to="/home#banner" key='Home'>
+            <ListItemIcon className='colorWhite'>
+            <LayersIcon  className='ColorMain'/>
+            </ListItemIcon>
+            <ListItemText className='colorWhite' primary="Blog" />
+          </ListItem>
+          <ListItem button as={HashLink} to="/home#blog" key='Contact' className='d-flex'>
+          <Link as={HashLink} to="/home#blog" className='linkButton'>
           <ListItemIcon>
-          <TurnedInNotIcon/>
-          </ListItemIcon>
-          <ListItemText primary='Contact' />
+          <TurnedInNotIcon  className='ColorMain' />
+          </ListItemIcon >
+          <ListItemText  className='colorWhite' primary='Contact' />
           </Link>
-        </ListItem>
- 
+        </ListItem> 
       </List>
+      <div className='footerIcon bottomNav mb-2 p-4'>
+         <Link href='https://www.facebook.com/tayeb.rayhan/' className='footerIconLink'> <FacebookIcon/> </Link>
+         <Link href='https://github.com/TayeburRahman' className='footerIconLink'> <GitHubIcon/></Link>
+         <Link href="https://www.linkedin.com/in/md-tayebur-rahman-rayhan-95025b1b8/" className='footerIconLink'> <LinkedInIcon/> </Link> 
+      </div>
     </Box>
   );
 

@@ -38,6 +38,20 @@
   animation: 5s;
 }
 .colorComo {
-  color: #425066 !important;
+  color: #bfccf3 !important;
   text-decoration: none !important;
+}
+.blog-background {
+  background: #030808 !important;
+}
+.boxShawdoBlog {
+  background: #030808 !important;
+  color: white !important;
+}
+.boxShawdoBlog:hover {
+  background: linear-gradient(
+    106.54deg,
+    #140078 -4.67%,
+    #5d00de 112.32%
+  ) !important;
 }

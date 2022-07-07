@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import About from '../Componets/About/About'
 import Banner from '../Componets/Banner/Banner'
 import BlogPage from '../Componets/Blog/BlogPage'
+import ContactEmail from '../Componets/Contact/Conatact.Email'
 import Project from '../Componets/Protfolio.project/Protfolio.project'
 import SubscribeMail from '../Componets/Subscribe/Subscribe.mail'
 
@@ -13,9 +14,10 @@ function  Home() {
              <About></About>
              {/* <Service></Service> */}
              <Project></Project>
-             <BlogPage></BlogPage>
              <SubscribeMail></SubscribeMail> 
-        </Fragment>
+             <BlogPage></BlogPage> 
+             <ContactEmail></ContactEmail>
+         </Fragment>
     )
 }
 
